@@ -20,11 +20,13 @@ These books will not build the system for you. But they will show you where the 
 
 ## 🎼 Repertoires
 
-Here is the catalog of *Little Books*. Each book will eventually live in its own repository. Only *Linear Algebra* is available now.
+Here is the catalog of *Little Books*. Each book will eventually live in its own repository. Only *Linear Algebra* and *Calculus* are available now.
 
 ### Mathematics
 
-- [The Little Book of Linear Algebra](https://github.com/the-litle-book-of/linear-algebra)
+- [The Little Book of Linear Algebra](https://github.com/the-litte-book-of/linear-algebra) - v0.1.0 (2025-09-02)
+- [The Little Book of Calculus](https://github.com/the-litte-book-of/calculus) - v0.1.0 (2025-09-03)
+- The Little Book of Multilinear Algebra - *soon*
 - The Little Book of Discrete Mathematics
 - The Little Book of Probability
 - The Little Book of Statistics

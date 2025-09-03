@@ -1,0 +1,104 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+\PassOptionsToPackage{dvipsnames,svgnames,x11names}{xcolor}
+\documentclass[
+  12pt,
+  a4paper,
+]{article}
+\usepackage{xcolor}
+\usepackage[a4paper,margin=2.5cm,heightrounded]{geometry}
+\usepackage{amsmath,amssymb}
+\setcounter{secnumdepth}{5}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math} % this also loads fontspec
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage{lmodern}
+\ifPDFTeX\else
+  % xetex/luatex font selection
+  \setmainfont[]{Noto Serif}
+  \setmonofont[]{Noto Sans Mono}
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\usepackage{amsmath}   % already pulled in by Pandoc, but safe
+\renewenvironment{equation}{\begin{equation*}}{\end{equation*}}
+\usepackage{microtype}
+\newcommand{\docversion}{0.1.1}
+\setcounter{secnumdepth}{0}
+\setcounter{tocdepth}{2} % keep TOC depth as desired
+\makeatletter
+\renewcommand{\sectionmark}[1]{\markboth{#1}{}}
+\renewcommand{\subsectionmark}[1]{\markright{#1}}
+\makeatother
+\usepackage{fancyhdr}
+\fancyhf{}%
+\fancyhead[LE,RO]{\thepage}%
+\fancyhead[LO,RE]{\nouppercase{\leftmark}}%
+\fancyfoot[C]{Version \docversion}%
+\renewcommand{\headrulewidth}{0.4pt}%
+\setlength{\headheight}{13.6pt}%
+}
+\usepackage{etoolbox}
+\AtBeginDocument{\thispagestyle{plain}\pagestyle{content}}
+\let\oldsection\section
+\renewcommand{\section}{\clearpage\oldsection}
+\usepackage{bookmark}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same}
+\hypersetup{
+  pdftitle={The Little Book of Everything},
+  pdfauthor={Duc-Tam Nguyen},
+  colorlinks=true,
+  linkcolor={blue},
+  filecolor={Maroon},
+  citecolor={Blue},
+  urlcolor={blue},
+  pdfcreator={LaTeX via pandoc}}
+
+\title{The Little Book of Everything}
+\usepackage{etoolbox}
+\makeatletter
+\providecommand{\subtitle}[1]{% add subtitle to \maketitle
+  \apptocmd{\@title}{\par {\large #1 \par}}{}{}
+}
+\makeatother
+\subtitle{Version 0.1.0}
+\author{Duc-Tam Nguyen}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+{
+\hypersetup{linkcolor=}
+\setcounter{tocdepth}{2}
+\tableofcontents
+}
+42
+
+\end{document}
