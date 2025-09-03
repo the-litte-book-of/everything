@@ -24,7 +24,7 @@ Here is the catalog of *Little Books*. Each book will eventually live in its own
 
 ### Mathematics
 
-- [The Little Book of Linear Algebra](https://github.com/the-litle-book-of/linear-algebra)
+- [The Little Book of Linear Algebra](https://github.com/the-litte-book-of/linear-algebra)
 - The Little Book of Discrete Mathematics
 - The Little Book of Probability
 - The Little Book of Statistics
